@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    
+</head>
+<!--js for login and sign up page-->
+<script src="index.js"></script>
+<!--for profile or home page-->
+<script src="main.js"></script>
+<style>
+    .hide{
+        display: none;
+    }
+</style>
+<body>
+    <div class="box">
+        <form class="form" id="log-in">
+            <h1>Log In</h1>
+            <!--username-->
+            <p>Username</p>
+            <div class="userInput">
+                <input type="text" class="username" autofocus placeholder="Username">
+            </div>
+            <!--password-->
+            <p>Password</p>
+            <div class="userInputPass">
+                <input type="password" class="password" autofocus placeholder="Password">
+            </div>
+            <button   type="submit"  >
+                Log In
+            </button>
+            
+            <!--sign up link ?? -- should i make sign up same page or a link?-->
+        <p>
+            <a href="./" id="linkSignUp"> Don't have an account? Sign up!</a>
+        </p>
+        </form>
+<!--signup-->
+<form class="hide" id="createAccount">
+    <h1>Sign Up</h1>
+    <!--username-->
+    <p>Username</p>
+    <div class="userInput">
+        <input type="text" class="username" autofocus placeholder="Username">
+    </div>
+    <p>Email Address</p>
+    <div class="userInputEmail">
+        <input type="text" class="email" autofocus placeholder="Email Address">
+    </div>
+    <!--password-->
+    <p>Password</p>
+    <div class="userInputPass">
+        <input type="password" class="password" autofocus placeholder="Password">
+    </div>
+    <p>Confirm Password</p>
+    <div class="userInputPass">
+        <input type="password" class="password" autofocus placeholder="Confirm Password">
+    </div>
+    <button type="submit">
+        Sign Up
+    </button>
+    <!--to return to log in-->
+    <p>
+        <a href="./" id="linkLogIn"> Already have an Account? Log In!</a>
+    </p>
+</form>
+    </div>
+</body>
+</html>
